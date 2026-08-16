@@ -33,8 +33,8 @@ export default function LoginPage() {
         <p className="text-sm text-ink/60 mb-6">Log in to your account</p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-         {/* <Input id="email" type="email" label="Email" value={email}
-            onChange={(e) => setEmail(e.target.value)} required autoFocus />*/}
+          <Input id="email" type="email" label="Email" value={email}
+            onChange={(e) => setEmail(e.target.value)} required autoFocus />
           <Input id="password" type="password" label="Password" value={password}
             onChange={(e) => setPassword(e.target.value)} required error={error} />
           <Button type="submit" disabled={loading} className="mt-2">
