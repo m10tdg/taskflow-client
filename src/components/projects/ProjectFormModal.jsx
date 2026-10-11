@@ -40,6 +40,7 @@ export default function ProjectFormModal({ open, initialProject, onClose, onSubm
         <Input
           id="project-name"
           label="Name"
+          name="projectName"
           value={name}
           maxLength={100}
           onChange={(e) => setName(e.target.value)}
@@ -50,6 +51,7 @@ export default function ProjectFormModal({ open, initialProject, onClose, onSubm
           <label htmlFor="project-desc" className="text-sm font-medium text-ink/80">Description</label>
           <textarea
             id="project-desc"
+            name="projectDescription"
             rows={3}
             maxLength={500}
             value={description}
